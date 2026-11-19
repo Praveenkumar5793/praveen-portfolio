@@ -1,6 +1,8 @@
 import React from 'react';
 import { personal } from '../data/portfolio';
-import { ArrowRight, Code, Database, Globe, Sparkles } from 'lucide-react';
+import { ArrowRight, Code, Database, Globe, Sparkles, Download, FileText } from 'lucide-react';
+
+const RESUME_PATH = '/Praveen_Resume.pdf';
 
 export const Hero: React.FC = () => {
   return (
@@ -44,11 +46,23 @@ export const Hero: React.FC = () => {
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <a
-                href="#projects"
+                href={RESUME_PATH}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex items-center gap-3 px-6 py-3.5 text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-purple-500 rounded-xl hover:opacity-95 transition-all shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5"
               >
-                Explore Projects
+                <FileText className="w-4 h-4" />
+                View Resume
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+
+              <a
+                href={RESUME_PATH}
+                download="Praveen_Kumar_Kalva_Resume.pdf"
+                className="flex items-center gap-2.5 px-6 py-3.5 text-sm font-semibold text-slate-200 bg-slate-900/80 border border-slate-700/80 hover:border-cyan-500/50 rounded-xl hover:bg-slate-800/80 transition-all backdrop-blur-sm"
+              >
+                <Download className="w-4 h-4 text-cyan-400" />
+                Download Resume
               </a>
 
               <a

@@ -14,8 +14,15 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const RESUME_PATH = '/Praveen_Resume.pdf';
+
   const handleResumeDownload = () => {
-    window.print();
+    const link = document.createElement('a');
+    link.href = RESUME_PATH;
+    link.download = 'Praveen_Kumar_Kalva_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -54,12 +61,22 @@ export const Navbar: React.FC = () => {
 
         {/* Actions */}
         <div className="hidden md:flex items-center gap-3">
-          <button
-            onClick={handleResumeDownload}
+          <a
+            href={RESUME_PATH}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-950/40 border border-cyan-500/30 rounded-xl hover:bg-cyan-900/40 hover:border-cyan-400/60 transition-all shadow-sm"
           >
             <Download className="w-3.5 h-3.5" />
-            Resume
+            View Resume
+          </a>
+          <button
+            onClick={handleResumeDownload}
+            className="flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-200 bg-slate-900/80 border border-slate-700/80 rounded-xl hover:border-cyan-500/50 hover:text-cyan-300 transition-all"
+            title="Download Praveen_Kumar_Kalva_Resume.pdf"
+          >
+            <Download className="w-3.5 h-3.5" />
+            Download
           </button>
           <a
             href="#contact"
@@ -93,15 +110,26 @@ export const Navbar: React.FC = () => {
             </a>
           ))}
           <div className="flex gap-3 pt-2">
+            <a
+              href={RESUME_PATH}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex-1 flex items-center justify-center gap-2 py-3 text-xs font-semibold text-cyan-400 bg-cyan-950/40 border border-cyan-500/30 rounded-xl"
+            >
+              <Download className="w-4 h-4" />
+              View Resume
+            </a>
             <button
               onClick={() => {
                 handleResumeDownload();
                 setMobileMenuOpen(false);
               }}
-              className="flex-1 flex items-center justify-center gap-2 py-3 text-xs font-semibold text-cyan-400 bg-cyan-950/40 border border-cyan-500/30 rounded-xl"
+              className="flex-1 flex items-center justify-center gap-2 py-3 text-xs font-semibold text-slate-200 bg-slate-900/80 border border-slate-700/80 rounded-xl hover:border-cyan-500/50 hover:text-cyan-300 transition-all"
+              title="Download Praveen_Kumar_Kalva_Resume.pdf"
             >
               <Download className="w-4 h-4" />
-              Resume PDF
+              Download
             </button>
             <a
               href="#contact"
