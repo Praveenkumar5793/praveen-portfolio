@@ -1,8 +1,8 @@
 export const personal = {
   name: "Praveen Kumar Kalva",
-  role: "Software Engineer",
-  tagline: "Frontend Engineer | React.js Developer | Aspiring AI Application Engineer",
-  sub: "Specializing in robust Frontend Development with React.js and TypeScript, now bridging into AI Application Engineering. I combine enterprise-level React expertise with AI-assisted development workflows to build scalable, intelligent, and maintainable web applications.",
+  role: "Full Stack Developer",
+  tagline: "Building scalable, high-performance web applications with React, Node.js, and GraphQL.",
+  sub: "Full Stack Developer specializing in robust Frontend architectures with React.js and TypeScript, complemented by scalable Backend services using Node.js and GraphQL. I combine enterprise-level development expertise with modern AI-assisted workflows to build intelligent, maintainable end-to-end solutions.",
   since: "September 2025",
   email: "kalvapraveen62@gmail.com",
   phone: "+91 6303300931",
@@ -11,16 +11,23 @@ export const personal = {
 
 export const stackLayers = [
   {
-    id: "ui",
-    title: "FRONTEND & LANGUAGES",
-    subtitle: "UI Architecture",
+    id: "frontend",
+    title: "FRONTEND & UI",
+    subtitle: "Client-side Architecture",
     color: "#22d3ee",
     tools: ["React.js", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3", "React Router", "Tailwind CSS", "Bootstrap"],
   },
   {
+    id: "backend",
+    title: "BACKEND & APIS",
+    subtitle: "Server-side & Data",
+    color: "#34d399",
+    tools: ["Node.js", "Express.js", "GraphQL", "Apollo Client", "REST APIs", "PostgreSQL", "SQL Server", "MongoDB"],
+  },
+  {
     id: "ai",
-    title: "AI APPLICATION ENGINEERING",
-    subtitle: "Future Tech (Learning)",
+    title: "AI & AGENTIC CONCEPTS",
+    subtitle: "Emerging Tech (Learning)",
     color: "#a78bfa",
     tools: ["LLM Fundamentals", "AI API Integration", "Prompt Engineering", "AI Agents", "Tool Calling", "Agentic Workflows"],
   },
@@ -30,13 +37,6 @@ export const stackLayers = [
     subtitle: "Workflow",
     color: "#f472b6",
     tools: ["Vibe Coding: AI-Assisted Development", "Iterative AI-guided workflows", "Code Generation", "AI-assisted Debugging"],
-  },
-  {
-    id: "backend",
-    title: "BACKEND & DATA",
-    subtitle: "Infrastructure",
-    color: "#34d399",
-    tools: ["GraphQL", "Apollo Client", "Node.js", "Express.js", "REST APIs", "PostgreSQL", "SQL Server", "MongoDB"],
   },
   {
     id: "delivery",
@@ -93,8 +93,8 @@ export const projects = [
 
 export const quickAnswers = [
   {
-    q: "What is Praveen's current focus?",
-    a: "Building robust, enterprise-grade React/TypeScript applications while expanding into AI Application Engineering, LLM integration, and Agentic AI.",
+    q: "What is Praveen's current role?",
+    a: "Full Stack Developer building robust end-to-end applications with React, Node.js, and GraphQL.",
   },
   {
     q: "What is his experience level?",
@@ -102,11 +102,11 @@ export const quickAnswers = [
   },
   {
     q: "How does he approach AI-Assisted Development?",
-    a: "He uses AI-Assisted Development and Vibe Coding: using AI coding assistants, structured prompts, and iterative AI-guided workflows to accelerate prototyping, generate code, and build applications efficiently.",
+    a: "He uses AI-Assisted Development and Vibe Coding: leveraging AI coding assistants, structured prompts, and iterative AI-guided workflows to accelerate prototyping and problem-solving.",
   },
   {
-    q: "How does he work with a team?",
-    a: "He collaborates with backend teams for API integration, utilizes Git and GitLab for version control, and participates in rigorous code reviews.",
+    q: "What is his core stack?",
+    a: "Strong expertise in React and TypeScript for frontend, complemented by Node.js, Express, GraphQL, and SQL/NoSQL databases for backend.",
   },
 ];
 
