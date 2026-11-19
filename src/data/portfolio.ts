@@ -1,8 +1,8 @@
 export const personal = {
   name: "Praveen Kumar Kalva",
   role: "Software Engineer",
-  tagline: "Specializing in Frontend Development and React.js with ~1 year of professional experience.",
-  sub: "Developing and maintaining responsive user interfaces for the Nebula Identity Access enterprise platform. Proficient in TypeScript, React.js, GraphQL, and Apollo Client.",
+  tagline: "Frontend Engineer | React.js Developer | Aspiring AI Application Engineer",
+  sub: "Specializing in robust Frontend Development with React.js and TypeScript, now bridging into AI Application Engineering. I combine enterprise-level React expertise with AI-assisted development workflows to build scalable, intelligent, and maintainable web applications.",
   since: "September 2025",
   email: "kalvapraveen62@gmail.com",
   phone: "+91 6303300931",
@@ -13,30 +13,37 @@ export const stackLayers = [
   {
     id: "ui",
     title: "FRONTEND & LANGUAGES",
-    subtitle: "UI & Core",
+    subtitle: "UI Architecture",
     color: "#22d3ee",
     tools: ["React.js", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3", "React Router", "Tailwind CSS", "Bootstrap"],
   },
   {
-    id: "data",
-    title: "DATA & APIS",
-    subtitle: "APIs & State",
+    id: "ai",
+    title: "AI APPLICATION ENGINEERING",
+    subtitle: "Future Tech (Learning)",
     color: "#a78bfa",
-    tools: ["GraphQL", "Apollo Client", "REST APIs"],
+    tools: ["LLM Fundamentals", "AI API Integration", "Prompt Engineering", "AI Agents", "Tool Calling", "Agentic Workflows"],
   },
   {
-    id: "services",
-    title: "BACKEND",
-    subtitle: "Services & Databases",
+    id: "vibe",
+    title: "AI-ASSISTED DEVELOPMENT",
+    subtitle: "Workflow",
     color: "#f472b6",
-    tools: ["Node.js", "Express.js", "PostgreSQL", "Microsoft SQL Server", "NoSQL"],
+    tools: ["Vibe Coding: AI-Assisted Development", "Iterative AI-guided workflows", "Code Generation", "AI-assisted Debugging"],
+  },
+  {
+    id: "backend",
+    title: "BACKEND & DATA",
+    subtitle: "Infrastructure",
+    color: "#34d399",
+    tools: ["GraphQL", "Apollo Client", "Node.js", "Express.js", "REST APIs", "PostgreSQL", "SQL Server", "MongoDB"],
   },
   {
     id: "delivery",
     title: "TOOLS & DEVOPS",
-    subtitle: "Workflow",
+    subtitle: "Productivity",
     color: "#fbbf24",
-    tools: ["Git", "GitLab", "VS Code", "Postman", "npm", "Vite"],
+    tools: ["Git", "GitLab", "GitHub", "VS Code", "npm", "Vite"],
   },
 ];
 
@@ -57,9 +64,9 @@ export const experience = {
 export const projects = [
   {
     title: "Nebula Identity Access Project",
-    tags: ["React.js", "TypeScript", "GraphQL", "Apollo Client", "Enterprise"],
-    desc: "Developed core frontend features for an enterprise-grade identity access management system. Implemented complex form validations and secure authentication workflows using React.js and TypeScript. Managed global application state and data fetching using Apollo Client and GraphQL queries.",
-    stats: ["IAM Platform", "GraphQL", "Apollo Client", "Secure Auth"],
+    tags: ["React.js", "TypeScript", "GraphQL", "Enterprise"],
+    desc: "Enterprise-grade identity and access management system. Contributed core frontend features, complex form validations, and secure authentication workflows while managing global state with Apollo Client.",
+    stats: ["IAM Platform", "Enterprise", "Secure Auth", "State Mgmt"],
     icon: "🛡️",
     demo: "#",
     github: "#",
@@ -67,9 +74,18 @@ export const projects = [
   {
     title: "Smart Farming System (IoT/ML)",
     tags: ["IoT", "Machine Learning", "Sensors", "Automation"],
-    desc: "Designed an IoT-based system to monitor soil metrics and automate irrigation processes using sensors. Integrated Machine Learning components to optimize irrigation automation based on real-time data.",
-    stats: ["Soil Metrics", "Auto-Irrigation", "Sensor Telemetry", "ML Optimization"],
+    desc: "IoT-based system monitoring soil metrics to automate irrigation. Integrated machine learning components to optimize automation based on real-time sensor telemetry.",
+    stats: ["IoT Metrics", "ML Logic", "Auto-Irrigation", "Python"],
     icon: "🌱",
+    demo: "#",
+    github: "#",
+  },
+  {
+    title: "AI-Assisted Portfolio (Vibe Coding)",
+    tags: ["React", "AI Agents", "Vibe Coding", "LLM"],
+    desc: "A professional portfolio built using AI-assisted development (Vibe Coding) workflows, leveraging structured prompts, iterative AI-guided prototyping, and agent-based debugging to accelerate feature delivery.",
+    stats: ["AI Assisted", "Agentic Flow", "Modern UI", "Vite"],
+    icon: "🤖",
     demo: "#",
     github: "#",
   },
@@ -77,16 +93,16 @@ export const projects = [
 
 export const quickAnswers = [
   {
-    q: "What does Praveen build?",
-    a: "Scalable, modular React components and enterprise frontend modules integrated with GraphQL APIs and Apollo Client.",
+    q: "What is Praveen's current focus?",
+    a: "Building robust, enterprise-grade React/TypeScript applications while expanding into AI Application Engineering, LLM integration, and Agentic AI.",
   },
   {
-    q: "Which stack is he strongest in?",
-    a: "Frontend development with React.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, GraphQL, and Apollo Client.",
+    q: "What is his experience level?",
+    a: "Software Engineer with ~1 year of professional experience, currently working at Peritus Corporation on enterprise-grade platforms.",
   },
   {
-    q: "Where does he work?",
-    a: "Peritus Corporation Pvt. Ltd. as a Software Engineer on the Nebula Identity Access enterprise platform since September 2025.",
+    q: "How does he approach AI-Assisted Development?",
+    a: "He uses AI-Assisted Development and Vibe Coding: using AI coding assistants, structured prompts, and iterative AI-guided workflows to accelerate prototyping, generate code, and build applications efficiently.",
   },
   {
     q: "How does he work with a team?",
